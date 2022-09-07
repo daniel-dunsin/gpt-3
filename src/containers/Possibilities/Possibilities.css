@@ -1,0 +1,48 @@
+.possibilities-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1rem;
+}
+.possibilities-image-container{
+    flex: 1;
+}
+.possibilities-image-container img{
+    width: 100%;
+}
+.possibilities-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: .85rem;
+}
+.possibilities-content h1{
+    width: 60%;
+    font-size: 1.6rem;
+}
+.possibilities-content p:first-child{
+    color: #71e5ff;
+}
+
+.possibilities-content p:nth-of-type(2){
+    color: var(--color-text);
+    line-height: 1.5;
+}
+.possibilities-content p:last-child{
+    color: #ff8a71;
+}
+
+
+@media screen and (max-width:990px) {
+    .possibilities-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:550px) {
+    .possibilities-content h1{
+        width: 100%;
+    }
+}

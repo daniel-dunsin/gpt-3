@@ -1,0 +1,46 @@
+.features-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.features-title{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+}
+.features-title p{
+    font-size: .85rem;
+}
+.features-content{
+    flex: 1.5;
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem;
+    flex-direction: column;
+}
+.features-content .feature-container .feature-heading{
+    flex: 1;
+}
+.features-content .feature-container .feature-heading h3{
+    width: 50%;
+}
+
+.features-content .feature-container p{
+    flex: 1;
+}
+
+@media screen and (max-width: 990px) {
+    .features-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .feature-container{
+        flex-direction: column;
+        gap: 0.625rem;
+    }
+}

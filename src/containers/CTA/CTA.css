@@ -1,0 +1,33 @@
+.cta-container{
+    padding: 2rem;
+    color:white;
+    background: var(--gradient-bar);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: .4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.cta-text p{
+    font-size: .85rem;
+    margin-bottom: .5rem;
+}
+.cta-button button{
+    padding: .75rem 1.5rem;
+    border-radius: 2.4rem;
+    font-size: .85rem;
+    color: white;
+    background-color: #050505;
+    border: none;
+}
+@media screen and (max-width: 990px) {
+    .cta-container{
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+        padding: 1.5rem;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+}

@@ -1,0 +1,17 @@
+.brands-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 2rem;
+}
+.brands-img-container{
+    min-width: 120px;
+    max-width: 150px;
+    text-align: center;
+}
+.brands-img-container img{
+    width: 100%;
+}

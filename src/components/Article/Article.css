@@ -1,0 +1,32 @@
+.article-container{
+    width: 100%;
+}
+.article-img{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex: 1;
+}
+.article-img img{
+    width: 100%;
+}
+.article-info{
+    flex: 1;
+    background-color: var(--color-blog);
+    padding: .625rem;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.article-info h3{
+    margin-bottom: 5rem;
+}
+.article-info p{
+    font-size: .85rem;
+    cursor: pointer;
+}
+.date{
+    margin-bottom: .5rem;
+}

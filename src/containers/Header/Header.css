@@ -1,0 +1,106 @@
+.header-container{
+    width: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.header-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+.header-content h1{
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+.header-content p{
+    font-size: .95rem;
+    color: var(--color-text);
+}
+.header-content .input-group{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .2rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+.header-content .input-group input{
+    flex: 1.5;
+    padding: .75rem;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: var(--color-text);
+}
+.header-content .input-group button{
+    flex: .6;
+    padding: .75rem 1rem;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: var(--color-button);
+    font-size: 1rem;
+}
+.header-content .people-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.header-content .people-container p{
+    font-size: .75rem;
+}
+.header-img{
+    flex: 1;
+}
+.header-img img{
+    width: 100%;
+}
+
+@media screen and (max-width:990px) {
+    .header-container{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .header-content .input-group input{
+        flex: 1;
+        width: 70%;
+    };
+    .header-content .input-group button{
+        flex: 1;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .header-content h1{
+        font-size: 1.8rem;
+    }
+    .header-content p{
+        font-size: .85rem;
+    }
+    .header-content .people-container{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .header-content .input-group{
+        flex-direction: column;
+    }
+    .header-content .input-group input{
+        width: 100%;
+    }
+    .header-content .input-group button{
+        width: 100%;
+        margin-top: .5rem;
+    }
+}
